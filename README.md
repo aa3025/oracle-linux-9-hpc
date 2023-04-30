@@ -1,5 +1,5 @@
 # Oracle Linux 9 HPC
-This project is collection of bash scripts and config files to automatically deploy rhel8-based HPC with PXE-install and kickstart files. Supports both BIOS-based and EFI PXE scenarios. Project's webpage is here: https://centoshpc.wordpress.com/
+This project is collection of bash scripts and config files to automatically deploy rhel9-based HPC with PXE-install and kickstart files. Supports both BIOS-based and EFI PXE scenarios. Project's webpage is here: https://centoshpc.wordpress.com/
 
 These scripts are not guaranteed to work and are provided as is or for your development. 
 
@@ -28,7 +28,7 @@ Do not add any users during initial installation of the head node (only root). Y
 
 5) Download OL9 install DVD
 
-6) cd oracle_linux_8_hpc and execute "./install.sh ../OL8xxxx.iso" from this folder (where ../OL9xxxx.iso is relative path to OL9 iso file). You will be prompted in a minute to enter internal and external LAN interface names. This is the only input required form user.
+6) cd oracle_linux_9_hpc and execute "./install.sh ../OL9xxxx.iso" from this folder (where ../OL9xxxx.iso is relative path to OL9 full install dvd iso file). You will be prompted in a minute to enter internal and external LAN interface names. This is the only input required form user.
 
 5) Once install.sh finishes, go and power up all your compute nodes (its better to do it one-by-one in an orderly fasion, their hostnames will be based on their DHCP addresses (node1, node2...), so if you want any kind of "system" in their naming make sure they boot with interval, so that previous one already obtained IP before the next one boots). They must be BIOS-configured to boot from network (PXE boot).
 
